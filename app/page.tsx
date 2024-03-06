@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
+import Chart from "./components/TradingViewChart/Chart";
 
 export default function IndexPage() {
-  return <Counter />;
+  return (
+    <>
+      <Chart />
+    </>
+  );
 }
 
 export const metadata: Metadata = {
